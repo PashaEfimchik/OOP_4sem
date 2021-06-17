@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="740.0" style="-fx-background-color: #0083CC;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CartController">
+    <children>
+        <TableView fx:id="cartTable" layoutX="104.0" layoutY="71.0" prefHeight="230.0" prefWidth="528.0" />
+        <Button layoutX="117.0" layoutY="324.0" mnemonicParsing="false" onAction="#clearCart" prefHeight="45.0" prefWidth="133.0" text="Clear">
+            <font>
+                <Font name="Cambria" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="deleteButton" layoutX="303.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteCartItem" prefHeight="45.0" prefWidth="133.0" text="Delete Item">
+            <font>
+                <Font name="Cambria" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="490.0" layoutY="324.0" mnemonicParsing="false" onAction="#purchase" prefHeight="45.0" prefWidth="133.0" text="Buy">
+            <font>
+                <Font name="Cambria" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn_close" layoutX="118.0" layoutY="379.0" mnemonicParsing="false" onAction="#closeCart" prefHeight="25.0" prefWidth="54.0" text="Cancel" />
+        <Label fx:id="articleLabel" layoutX="346.0" layoutY="32.0" maxWidth="487.0" prefHeight="30.0" text="Cart">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="overallPriceField" layoutX="466.0" layoutY="377.0" maxWidth="487.0" prefHeight="30.0" prefWidth="157.0">
+            <font>
+                <Font name="Cambria" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
